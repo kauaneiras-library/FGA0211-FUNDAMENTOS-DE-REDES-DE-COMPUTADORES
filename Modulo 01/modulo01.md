@@ -356,4 +356,21 @@ Diferentemente das outras parcelas componentes do atraso nodal, o atraso por enf
   - Se a intensidade de tráfego for menor que a capacidade de transmissão, o comprimento da fila irá diminuir.
   - Intensidade de tráfego se aproximando de 1 -> aumento no atraso por enfileiramento.
 
-Pag 67
+### Perda de Pacote
+Assumiu-se, até o momento, que uma fila era capaz de armazenar o número infinito de pacotes.
+- Filas reais são limitadas: pacotes descartados no caso em que um pacote alcança um roteado cujos filas estão cheias.
+- Pacote foi inserido no núcleo da rede pelo host emissor e jamais irá emergir do núcleo, pois foi descartado.
+- Perdas de pacote aumentam quando a intensidade de tráfego aumeta.
+- Métricas de desempenho de um nó: atrasos e probabilidade de perdas de pacotes.
+  
+  #### Atraso Fim a Fim
+  - Cenário: rede não congestionada -> atrasos de enfileiramento negligíveis.
+  - Seja N - 1 a quantidade de roteadores entre o host de origem e o host de destino.
+  - d_fim-a-fim = N * (d_proc + d_trans + d_prop).
+
+#### Vazão de redes de computadores
+- Vazão: taxa de transmissão do enlace mais lento (gargalo) atravessado por um pacote de viaja de viaja entre um cliente e um servidor <- desde que não haja congestionamento/trafego interferente!
+- O fator de restrição mais marcante na Internet atual é imposto pelas redes de acesso: a rede núcleo é de elevadíssima velocidade e sofre de pouca congestão.
+
+
+PAG 72
